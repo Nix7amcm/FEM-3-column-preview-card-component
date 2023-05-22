@@ -1,0 +1,215 @@
+/*_____ GLOBAL STYLES _____*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  font-family: var(--f-p);
+  font-size: var(--fs-p);
+  background: var(--bg-body);
+}
+
+@media (max-width: 952px) {
+  body {}
+}
+
+
+/*_____ HEADER-H1-HIDDEN _____*/
+
+.sr-only {
+  /*@ https://tailwindcss.com/docs/screen-readers#screen-reader-only-elements */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/*_____ ICONS _____*/
+
+.icon-wrap {
+  width: 4rem;
+  height: 2.5rem;
+  margin-bottom: 2.1875rem;
+}
+
+@media (max-width: 952px) {
+  .icon-wrap {
+    margin-bottom: 2.1875rem;
+  }
+}
+
+
+/*_____ TYPOGRAPHY _____*/
+
+h2 {
+  margin-bottom: 1.5625rem;
+  font-family: var(--f-h2);
+  color: var(--fc-h2);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-h2);
+  line-height: var(--lh-h2);
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 5.1875rem;
+  font-family: var(--f-p);
+  color: var(--fc-p);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-p);
+  line-height: var(--lh-p);
+  text-align: left;
+}
+
+@media (max-width: 952px) {
+  p {
+    margin-bottom: 1.5625rem;
+  }
+}
+
+
+/*_____ BUTTONS _____*/
+
+button {
+  width: 9.125rem;
+  height: 3rem;
+  font-family: var(--f-btn);
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-btn);
+  line-height: var(--lh-btn);
+  background: var(--bg-btn);
+  border: none;
+  border-radius: var(--lh-btn);
+}
+
+@media (max-width: 952px) {
+  button {
+
+  }
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--bdr-btn-hov);
+  color: var(--fc-btn-hov);
+}
+
+.btn1 {
+  color: var(--fc-btn1);
+}
+
+.btn1:hover {
+  background: var(--bg-btn1-hov);
+}
+
+.btn2 {
+  color: var(--fc-btn2);
+}
+
+.btn2:hover {
+  background: var(--bg-btn2-hov);
+}
+
+.btn3 {
+  color: var(--fc-btn3);
+}
+
+.btn3:hover {
+  background: var(--bg-btn3-hov);
+}
+
+button:active {
+  border: 2px solid var(--bdr-btn-act);
+}
+
+
+@media (max-width: 952px) {}
+
+
+/*_____ LAYOUT _____*/
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 57.5rem;
+  min-height: 31.25rem;
+  border-radius: .625rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+@media (max-width: 952px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20.4375rem;
+    min-height: 82.875rem;
+    margin: 5.5rem 1.5rem;
+  }
+
+  .content {}
+}
+
+.sedans {
+  background: var(--bg-card1-orange);
+}
+
+.suvs {
+  background: var(--bg-card2-cyan);
+}
+
+.luxury {
+  background: var(--bg-card3-dkcyan);
+}
+
+
+
+/*_____ FOOTER _____*/
+
+footer {
+  color: var(--text-footer);
+  font-size: .6875rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--text-footer-a);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text-footer-a-hov);
+}
+
+footer a:visited {
+  color: var(--text-footer-a-vis);
+}

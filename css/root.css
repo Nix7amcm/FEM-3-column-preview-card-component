@@ -1,0 +1,47 @@
+:root {
+  /*_____ colors _____*/
+  --bg-body: hsl(0, 0%, 95%);
+  --bg-card1-orange: hsl(31, 77%, 52%);
+  --bg-card2-cyan: hsl(184, 100%, 22%);
+  --bg-card3-dkcyan: hsl(179, 100%, 13%);
+
+  --bg-btn: hsl(0, 0%, 95%);
+  --bdr-btn-hov: hsl(0, 0%, 95%);
+  --bdr-btn-act: hsl(0, 0%, 7%);
+  --bg-btn1-hov: hsl(31, 77%, 52%);
+  --bg-btn2-hov: hsl(184, 100%, 22%);
+  --bg-btn3-hov: hsl(179, 100%, 13%);
+
+  --fc-h2: hsl(0, 0%, 95%);
+  --fc-p: hsla(0, 0%, 100%, 0.75);
+  --fc-btn1: hsl(31, 77%, 52%);
+  --fc-btn2: hsl(184, 100%, 22%);
+  --fc-btn3: hsl(179, 100%, 13%);
+  --fc-btn-hov: hsl(0, 0%, 95%);
+
+  --text-footer: hsl(0, 0%, 7%);
+  --text-footer-a: hsl(180, 100%, 27%);
+  --text-footer-a-hov: hsl(39, 100%, 50%);
+  --text-footer-a-vis: hsl(300, 100%, 25%);
+
+  /*_____ font-family _____*/
+  --f-h2: 'Big Shoulders Display', cursive;
+  --f-p: 'Lexend Deca', sans-serif;
+  --f-btn: 'Lexend Deca', sans-serif;
+
+  /*_____ font-size _____*/
+  --fs-h2: 2.5rem;
+  --fs-p: .9375rem;
+  --fs-btn: .9375rem;
+
+  /*_____ font-weight _____*/
+  --fw-h2: 700;
+  --fw-p: 400;
+  --fw-btn: 400;
+
+  /*_____ line-height _____*/
+  --lh-h2: 2.9925rem;
+  --lh-p: 1.5625rem;
+  --lh-btn: 1.5625rem;
+
+}
