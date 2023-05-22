@@ -92,6 +92,46 @@ p {
 }
 
 
+/*_____ LAYOUT _____*/
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 57.5rem;
+  min-height: 31.25rem;
+  border-radius: .625rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+@media (max-width: 952px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20.4375rem;
+    min-height: 82.875rem;
+    margin: 5.5rem 1.5rem;
+  }
+}
+
+.sedans {
+  background: var(--bg-card1-orange);
+}
+
+.suvs {
+  background: var(--bg-card2-cyan);
+}
+
+.luxury {
+  background: var(--bg-card3-dkcyan);
+}
+
+
 /*_____ BUTTONS _____*/
 
 button {
@@ -139,49 +179,6 @@ button:is(:hover, :focus-visible) {
 button:active {
   border: 5px solid var(--bdr-btn-act);
 }
-
-
-/*_____ LAYOUT _____*/
-
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 57.5rem;
-  min-height: 31.25rem;
-  border-radius: .625rem;
-  overflow: hidden;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem;
-}
-
-@media (max-width: 952px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    max-width: 20.4375rem;
-    min-height: 82.875rem;
-    margin: 5.5rem 1.5rem;
-  }
-
-  .content {}
-}
-
-.sedans {
-  background: var(--bg-card1-orange);
-}
-
-.suvs {
-  background: var(--bg-card2-cyan);
-}
-
-.luxury {
-  background: var(--bg-card3-dkcyan);
-}
-
 
 
 /*_____ FOOTER _____*/
