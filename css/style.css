@@ -104,25 +104,19 @@ button {
   background: var(--bg-btn);
   border: none;
   border-radius: var(--lh-btn);
-}
-
-@media (max-width: 952px) {
-  button {
-
-  }
-}
-
-button:hover {
   cursor: pointer;
-  border: 2px solid var(--bdr-btn-hov);
+}
+
+button:is(:hover, :focus-visible) {
   color: var(--fc-btn-hov);
+  border: 2px solid var(--bdr-btn-hov);
 }
 
 .btn1 {
   color: var(--fc-btn1);
 }
 
-.btn1:hover {
+.btn1:is(:hover, :focus-visible) {
   background: var(--bg-btn1-hov);
 }
 
@@ -130,7 +124,7 @@ button:hover {
   color: var(--fc-btn2);
 }
 
-.btn2:hover {
+.btn2:is(:hover, :focus-visible) {
   background: var(--bg-btn2-hov);
 }
 
@@ -138,16 +132,13 @@ button:hover {
   color: var(--fc-btn3);
 }
 
-.btn3:hover {
+.btn3:is(:hover, :focus-visible) {
   background: var(--bg-btn3-hov);
 }
 
 button:active {
-  border: 2px solid var(--bdr-btn-act);
+  border: 5px solid var(--bdr-btn-act);
 }
-
-
-@media (max-width: 952px) {}
 
 
 /*_____ LAYOUT _____*/

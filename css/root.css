@@ -6,11 +6,11 @@
   --bg-card3-dkcyan: hsl(179, 100%, 13%);
 
   --bg-btn: hsl(0, 0%, 95%);
-  --bdr-btn-hov: hsl(0, 0%, 95%);
-  --bdr-btn-act: hsl(0, 0%, 7%);
   --bg-btn1-hov: hsl(31, 77%, 52%);
   --bg-btn2-hov: hsl(184, 100%, 22%);
   --bg-btn3-hov: hsl(179, 100%, 13%);
+  --bdr-btn-hov: hsl(0, 0%, 95%);
+  --bdr-btn-act: hsl(0, 0%, 95%);
 
   --fc-h2: hsl(0, 0%, 95%);
   --fc-p: hsla(0, 0%, 100%, 0.75);
